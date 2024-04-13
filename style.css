@@ -1,0 +1,691 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.carticonn{
+  display: none;
+  visibility: hidden;
+}
+
+.carticon{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.hamb{
+  display: none;
+  visibility: hidden;
+}
+
+/* CSS for cart items */
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.decrement-button{
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-item p {
+  margin: 0;
+  color: white;
+}
+
+.cart-item p:first-child {
+  font-weight: bold;
+  color: white;
+}
+
+.decrement-button{
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-quantity{
+  font-size: 17px;
+}
+
+.increment-button{
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.increhol{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Additional styling for carting div */
+.carting {
+  display: none;
+  visibility: hidden;
+  width: 0%;
+  height: 0px;
+  background-color: rgb(94, 94, 94);
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-y: scroll;
+}
+
+.active {
+  width: 300px;
+  height: 100vh;
+  gap: 10px;
+  /* border-radius: 20px; */
+  display: block;
+  visibility: visible;
+  background-color: rgb(94, 94, 94);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  z-index: 50000;
+}
+
+.icongap{
+  display: flex;
+  gap: 40px;
+}
+
+#iconnn{
+  width: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* .navholl{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .navlink{
+  color: white;
+  width: 20px;
+  display: flex;
+} */
+
+.navlinks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(2, 2, 58);
+  color: black;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 40px;
+  color: white;
+}
+
+/* .carting{
+  display: none;
+  visibility: hidden;
+  width: 0%;
+  height: 0px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+/* .active{
+  width: 300px;
+  height: 80%;
+  gap: 10px;
+  border-radius: 20px;
+  display: block;
+  visibility: visible;
+  background-color: black;
+  margin-top: 80px;
+  margin-right: ;
+  position: fixed;
+  top: 90px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  z-index: 50000;
+} */
+
+#i{
+  font-size: 40px;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: url('pic3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.holder{
+  width: fit-content;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-top: 10%;
+  margin-left: 60%; */
+  gap: 5px;
+}
+
+.head{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 50px;
+}
+
+.intro{
+  color: black;
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.part1{
+  width: 100%;
+  height: fit-content;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.part1box{
+  width: 15%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.fd{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.fdc{
+  font-size: 15px;
+  color: black;
+}
+
+
+.part2{
+  width: 100%;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.priceholder{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(2, 2, 58);
+  color: white;
+  gap: 10px;
+}
+
+.holdersw{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.addtocart{
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  color: black;
+}
+
+.addtocart:hover{
+  background-color: black;
+  color: white;
+}
+
+.slide1{
+  width: 20%;
+  height: 500px;
+  background-image: url('pic5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+
+
+.part3{
+  width: 100%;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.part3sec{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+
+.part3head{
+  font-size: 34px;
+  display: flex;
+  text-align: center;
+}
+
+
+.part4{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.part4pic{
+  width: 50%;
+  height: 100%;
+  background-image: url('pic3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.part4pic1{
+  width: 50%;
+  height: 100%;
+  background-image: url('pic2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hold4{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 400px;
+  gap: 20px;
+}
+
+.pictex{
+  font-size: 50px;
+  color: white;
+}
+
+.part6{
+  width: 100%;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.part6holder{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.holdee{
+  width: 25%;
+  height: 250px;
+  border: 2px solid black;
+}
+
+.part6head{
+  font-size: 34px;
+}
+
+.write{
+  font-size: 17px;
+  text-align: center;
+}
+
+.holder6{
+  /* width: 60px; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.intro1{
+  color: white;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part7{
+  width: 100%;
+  height: 500px;
+  background-image: url('pic3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding-top: 50px;
+  padding-bottom: 100px; */
+}
+
+.shopmenu{
+  display: none;
+  visibility: hidden;
+}
+
+.menu{
+  display: none;
+  visibility: hidden;
+}
+
+.tag::before{
+  content: "$";
+}
+@media screen and (max-width: 700px){
+  .part2{
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .slide1{
+    width: 80%;
+    height: 500px;
+    background-image: url('pic5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .part1{
+    width: 100%;
+    height: fit-content;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-direction: column;
+  }
+
+  .part1box{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .part4{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .part4pic{
+    width: 100%;
+    height: 100%;
+    background-image: url('pic3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .part4pic1{
+    width: 100%;
+    height: 100%;
+    background-image: url('pic2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: none;
+    visibility: hidden;
+  }
+
+
+  .part6holder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .holdee{
+    width: 80%;
+    height: 250px;
+    border: 2px solid black;
+  }
+
+  .navlink{
+    display: none;
+    visibility: hidden;
+  }
+
+  .hamb{
+    display: block;
+    visibility: visible;
+    font-size: 25px;
+  cursor: pointer;
+  }
+
+  .menu{
+    width: 0;
+    height: 0;
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .active1{
+    width: 80%;
+    height: 100vh;
+    background-color: lightblue;
+    display: block;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .wools{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #iconn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(2, 2, 58);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #iconnnn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(2, 2, 58);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shopmenu{
+    width: 0;
+    height: 0;
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    /* transform: translateX(-100%); */
+    transition: .5s;
+
+  }
+
+  .active2{
+    width: 80%;
+    height: 100vh;
+    background-color: lightblue;
+    display: block;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* transform: translateX(0); */
+  }
+
+  nav{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
